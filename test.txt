@@ -1,0 +1,29 @@
+What does 422 Unprocessable Entity mean?
+The 422 Unprocessable Entity status code means that while the request was well-formed, the server was unable to follow it, due to semantic errors.
+
+What does 423 Locked mean?
+The 423 Locked status code means that the resource that is being accessed is locked.
+
+What does 424 Failed Dependency mean?
+The 424 Failed Dependency status code means that the request failed due to the failure of a previous request.
+
+What does 425 Too Early mean?
+The 425 Too Early status code means that the server is not willing to risk processing a request that might be replayed.
+
+What does 426 Upgrade Required mean?
+The 426 Upgrade Required status code means that while the server refuses to perform the given request using the current protocol, it might be willing to do so after the client has been upgraded to a different protocol.
+
+What does 428 Precondition Required mean?
+The 428 Precondition Required status code means that the origin server requires the request to be conditional.
+
+What does 429 Too Many Requests mean?
+The 429 Too Many Requests response code means that in the given time, the user has sent too many requests.
+
+What does 431 Request Header Fields Too Large mean?
+The 431 Request Header Fields Too Large means that the server is not willing to process the request because its header fields are indeed too large, however, the request may be submitted again once the size of the request header fields is reduced.
+
+What does 451 Unavailable For Legal Reasons mean?
+The 451 Unavailable For Legal Reasons response code means that the user has requested an illegal resource (such as pages and sites blocked by the government).
+
+What does a 5xx Server error mean?
+A 5xx Server error status code means that while the request appears to be valid, the server could not complete the request. If you're experiencing 5xx server errors for your website, you should immediately look at your server. If you're hosting your own server you'll need to start debugging to figure out why it is not responding properly. If you're using an external hosting provider you'll need to reach out to them, so they can look at it.
