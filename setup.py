@@ -5,7 +5,7 @@ setup(
     version="0.1.0",
     packages=find_packages(),
     install_requires=[
-        # Add your dependencies here, e.g. "requests", "pyyaml", etc.
+        "colorama~=0.4.6",
     ],
     entry_points={
         "console_scripts": [
