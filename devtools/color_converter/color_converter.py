@@ -20,28 +20,28 @@ def register(subparsers):
     )
 
     group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument("--cmykRgb", type=str, help="Conversion from CMYK to RGB.")
-    group.add_argument("--hexRgb", type=str, help="Conversion from HEX to RGB.")
-    group.add_argument("--hslRgb", type=str, help="Conversion from HSL to RGB.")
-    group.add_argument("--hsvRgb", type=str, help="Conversion from HSV to RGB.")
-    group.add_argument("--rgbCmyk", type=str, help="Conversion from RGB to CMYK.")
-    group.add_argument("--rgbHex", type=str, help="Conversion from RGB to HEX.")
-    group.add_argument("--rgbHsl", type=str, help="Conversion from RGB to HSL.")
-    group.add_argument("--rgbHsv", type=str, help="Conversion from RGB to HSV.")
+    group.add_argument("--cmykRgb", type=str, metavar="COLOR", help="Conversion from CMYK to RGB. Format: cmyk(c, m, y, k)")
+    group.add_argument("--hexRgb", metavar="COLOR", type=str, help="Conversion from HEX to RGB. Format: hex(#AABBCC)")
+    group.add_argument("--hslRgb", metavar="COLOR", type=str, help="Conversion from HSL to RGB. Format: hsl(h, s, l)")
+    group.add_argument("--hsvRgb", metavar="COLOR", type=str, help="Conversion from HSV to RGB. Format: hsv(h, s, v)")
+    group.add_argument("--rgbCmyk", metavar="COLOR", type=str, help="Conversion from RGB to CMYK. Format: rgb(r, g, b)")
+    group.add_argument("--rgbHex", metavar="COLOR", type=str, help="Conversion from RGB to HEX. Format: rgb(r, g, b)")
+    group.add_argument("--rgbHsl", metavar="COLOR", type=str, help="Conversion from RGB to HSL. Format: rgb(r, g, b)")
+    group.add_argument("--rgbHsv", metavar="COLOR", type=str, help="Conversion from RGB to HSV. Format: rgb(r, g, b)")
 
     parser.set_defaults(func=run)
 
 
 def run(args):
     dispatch = {
-        "cmykToRgb": getCmykToRGB,
-        "hexToRgb":  getHexToRgb,
-        "hslToRgb":  getHslToRgb,
-        "hsvToRgb":  getHsvToRgb,
-        "rgbToCmyk": getRgbToCmyk,
-        "rgbToHex":  getRgbToHex,
-        "rgbToHsl":  getRgbToHsl,
-        "rgbToHsv":  getRgbToHsv,
+        "cmykRgb": getCmykToRGB,
+        "hexRgb":  getHexToRgb,
+        "hslRgb":  getHslToRgb,
+        "hsvRgb":  getHsvToRgb,
+        "rgbCmyk": getRgbToCmyk,
+        "rgbHex":  getRgbToHex,
+        "rgbHsl":  getRgbToHsl,
+        "rgbHsv":  getRgbToHsv,
     }
 
     for flag, func in dispatch.items():
