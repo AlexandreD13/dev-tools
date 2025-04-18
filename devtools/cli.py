@@ -1,6 +1,9 @@
-import argparse
-from devtools import http_status, text_stats, color_converter
 from colorama import init
+from devtools.color_converter import color_converter
+from devtools.http_status import http_status
+from devtools.text_stats import text_stats
+
+import argparse
 
 
 def main(argv=None):
@@ -26,18 +29,13 @@ def main(argv=None):
         help="Subcommands"
     )
 
-    # Register the HTTP status code explainer subcommand
-    http_status.register(subparsers)
-
-    # Register the text statistics subcommand
-    text_stats.register(subparsers)
-
-    # Register the color converter subcommand
-    color_converter.register(subparsers)
+    http_status.register(subparsers)        # Register the HTTP status code explainer subcommand
+    text_stats.register(subparsers)         # Register the text statistics subcommand
+    color_converter.register(subparsers)    # Register the color converter subcommand
 
     args = parser.parse_args(argv)
     args.func(args)
 
 
 if __name__ == "__main__":
-    main(["color_converter", "--hsvToRgb", "hsv(97, 63, 45)"])
+    main(["color_converter", "--rgbToHsv", "rgb(0, 118, 132)"])

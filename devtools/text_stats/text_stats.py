@@ -26,7 +26,7 @@ def register(subparsers):
 
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--file", type=str, help="Path to file.")
-    group.add_argument("--string", type=str, help="String of text.")
+    # group.add_argument("--string", type=str, help="String of text.")
 
     parser.set_defaults(func=run)
 
@@ -57,8 +57,8 @@ def run(args):
 
         print(f"\n{Fore.BLUE}{Style.BRIGHT}" + json.dumps(results, ensure_ascii=False, indent=4) + f"{Style.RESET_ALL}")
 
-    if args.string:
-        print("string")
+    # if args.string:
+    #     print("string")
 
 
 def get_word_list(text):
