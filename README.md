@@ -42,9 +42,6 @@ Bundle multiple small utilities into one CLI:
   - Convert between decimal, hex, binary, base64.
 - devtools encoding
   - Detect and convert file encodings (UTF-8, Latin1, etc).
-- tree
-  - Print a tree view of a directory (like tree command).
-  - Optional: limit depth, include hidden files.
 - table
   - Pretty-print data as a markdown table from CSV or JSON.
 - filemeta
