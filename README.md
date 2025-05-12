@@ -2,7 +2,16 @@
 
 ---
 
-## 
+## Commands
+
+Make tool available from anywhere by cmd
+
+```bash
+$ pip install --editable .  # pip install -e .
+```
+
+
+## Tool Ideas 
 
 Bundle multiple small utilities into one CLI:
 - fakie

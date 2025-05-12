@@ -51,8 +51,10 @@ def run(args):
         results["Number of lines"] = len(text.splitlines())
         results["Number of unique words"] = len(set(word_list))
         results["Most common words"] = Counter([word for word in word_list if len(word) > 2]).most_common(5)
+
+        filtered_chars = re.sub(r'[^a-zA-Z0-9]', '', character_string.lower())
         results["Character frequencies"] = OrderedDict(
-            sorted(dict(Counter(re.sub(r'\d', '', character_string.lower()))).items())
+            sorted(Counter(filtered_chars).items())
         )
 
         print(f"\n{Fore.BLUE}{Style.BRIGHT}" + json.dumps(results, ensure_ascii=False, indent=4) + f"{Style.RESET_ALL}")
