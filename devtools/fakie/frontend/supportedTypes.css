@@ -1,0 +1,99 @@
+.supported-types-container {
+    padding: 10px 10px;
+    margin-top: 20px;
+    color: var(--color-primary);
+    text-align: left;
+    border-radius: 15px;
+
+    border: 3px solid var(--color-light);
+}
+
+.supported-types-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.supported-types-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.supported-types-category {
+    flex: 1 1 30%;
+    min-width: 200px;
+    padding: 0 10px 10px;
+    color: var(--color-accent);
+
+    overflow-wrap: break-word;
+
+    /*--bg-gradient: linear-gradient(*/
+    /*        45deg,*/
+    /*        var(--color-primary) 5%,*/
+    /*        var(--color-secondary) 10%,*/
+    /*        var(--color-tertiary) 30%,*/
+    /*        var(--color-fourth) 50%,*/
+    /*        var(--color-tertiary) 70%,*/
+    /*        var(--color-secondary) 80%,*/
+    /*        var(--color-primary) 95%*/
+    /*);
+
+    /*background: var(--color-bg-dark) var(--bg-gradient);*/
+    background: var(--color-bg-dark);
+
+    border-radius: 10px;
+    border: 1px solid var(--color-primary);
+}
+
+.supported-types-category-title {
+    margin: 0;
+    padding-top: 10px;
+
+    color: var(--color-light);
+
+    border-radius: 10px;
+}
+
+.supported-types-labels {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.supported-types-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.supported-types {
+    display: block;
+    font-weight: bold;
+    cursor: default;
+    padding: 5px;
+    border-radius: 5px;
+
+    margin-top: 5px;
+    color: var(--color-light);
+}
+
+.supported-types-description {
+    margin: 0 20px 0;
+    padding: 0 5px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.supported-types-additional {
+    list-style-type: disc;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding-left: 20px;
+    margin: 5px 40px 10px;
+    font-size: 18px;
+}

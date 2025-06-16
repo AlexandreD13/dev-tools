@@ -1,0 +1,54 @@
+.app {
+    --color-primary: #343A40;
+    --color-secondary: #495057;
+    --color-tertiary: #6c757d;
+    --color-fourth: #adb5bd;
+    --color-accent: #ced4da;
+    --color-bg-dark: #212529;
+    --color-light: #ffffff;
+
+    --title-size: 40px;
+    --header2-size: 28px;
+    --header3-size: 24px;
+    --normal-size: 18px;
+
+    min-height: 100%;
+
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+    background-color: var(--color-light);
+    color: var(--color-light);
+}
+
+.title {
+    color: var(--color-primary);
+    font-size: var(--title-size);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.bold-text {
+    color: var(--color-light);
+}
+
+label {
+    color: var(--color-light);
+    font-size: var(--normal-size);
+}
+
+p {
+    font-size: var(--normal-size);
+}
+
+h2 {
+    font-size: var(--header2-size);
+}
+
+h3 {
+    font-size: var(--header3-size);
+}
