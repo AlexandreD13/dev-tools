@@ -1,0 +1,22 @@
+{
+    "credit_card": {
+        "number": "CREDIT_CARD_NUMBER",
+        "expiration_date": "CREDIT_CARD_EXPIRE",
+        "provider": "CREDIT_CARD_PROVIDER",
+        "code": "CREDIT_CARD_SECURITY_CODE"
+    },
+    "first_name": "FIRST_NAME",
+    "last_name": "LAST_NAME",
+    "address": {
+        "city": "CITY",
+        "country": "COUNTRY",
+        "street_address": "STREET_ADDRESS"
+    },
+    "phone_numbers": ["PHONE_NUMBER", 2],
+    "birthdate": "DATE_OF_BIRTH",
+    "job_title": "JOB_TITLE",
+    "email": "EMAIL",
+    "uername": "USER_NAME",
+    "password": "SHA256",
+    "timestamp": "DATE_TIME"
+}

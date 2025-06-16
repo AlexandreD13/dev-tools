@@ -2,6 +2,7 @@ from colorama import init
 
 from devtools.color_converter import color_converter
 from devtools.dir_tree import dir_tree
+from devtools.fakie import fakie
 from devtools.http_status import http_status
 from devtools.lorem_ipsum import lorem_ipsum
 from devtools.text_stats import text_stats
@@ -37,6 +38,7 @@ def main(argv=None):
     lorem_ipsum.register(subparsers)        # Register the Lorem ipsum text generator subcommand
     text_stats.register(subparsers)         # Register the Text statistics subcommand
     dir_tree.register(subparsers)           # Register the Directory Tree subcommand
+    fakie.register(subparsers)              # Register the Fakie subcommand
 
     args = parser.parse_args(argv)
     args.func(args)

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Fakie</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="parameters.css"/>
+    <link rel="stylesheet" href="schemaOutput.css"/>
+    <link rel="stylesheet" href="supportedTypes.css"/>
+</head>
+<body>
+<div class="app">
+    <h1 class="title">Fakie: A Generator of Fake Data</h1>
+
+    <div class="parameters-container">
+        <div class="nbRecords-container">
+            <label>Number of Records:</label>
+
+            <div class="nbRecords-input-group">
+                <button id="dec" class="nbRecords-button">-</button>
+                <input id="numRecords" class="nbRecords-input" type="number" min="1" max="1000" value="1"/>
+                <button id="inc" class="nbRecords-button">+</button>
+            </div>
+        </div>
+
+        <div class="locale-container">
+            <label>Locale:</label>
+
+            <select id="locale">
+                <option value="en_US">English (US)</option>
+                <option value="fr_FR">French (FR)</option>
+                <option value="de_DE">German (DE)</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="side-by-side-container">
+        <div class="schema-container">
+            <h2>Object Schema:</h2>
+            <textarea id="data-structure-textarea">{{data_structure}}</textarea>
+            <p id="error" class="error"></p>
+            <button id="clear" class="button">Clear Schema</button>
+            <button id="generate" class="button">Generate Data</button>
+            <p>
+                Array format: <code class="inline-code">["TYPE", count]</code>
+            </p>
+        </div>
+
+        <div class="vertical-divider"></div>
+
+        <div class="generated-data-container">
+            <h2>Generated Data:</h2>
+            <pre id="output" class="generated-data"></pre>
+        </div>
+    </div>
+
+    <div class="supported-types-container">
+        <h2 class="supported-types-title">Supported Types</h2>
+        <div id="types" class="supported-types-grid"></div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

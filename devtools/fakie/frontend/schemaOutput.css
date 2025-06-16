@@ -1,0 +1,121 @@
+.side-by-side-container {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    padding: 10px;
+
+    margin-top: 10px;
+
+    border-radius: 10px;
+    border: 1px solid var(--color-primary);
+
+    /*--bg-gradient: linear-gradient(*/
+    /*        45deg,*/
+    /*        var(--color-primary) 5%,*/
+    /*        var(--color-secondary) 10%,*/
+    /*        var(--color-tertiary) 30%,*/
+    /*        var(--color-fourth) 50%,*/
+    /*        var(--color-tertiary) 70%,*/
+    /*        var(--color-secondary) 80%,*/
+    /*        var(--color-primary) 95%*/
+    /*);
+
+    /*background: var(--color-bg-dark) var(--bg-gradient);*/
+    background: var(--color-bg-dark);
+}
+
+.schema-container,
+.generated-data-container {
+    width: 49%;
+    flex: 1;
+}
+
+#data-structure-textarea {
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    min-height: 500px;
+    max-height: 500px;
+
+    border: 1px solid var(--color-primary);
+    background: var(--color-accent);
+
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.25;
+    caret-color: var(--color-bg-dark);
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-accent);
+    overscroll-behavior: none;
+
+    tab-size: 4;
+}
+
+.data-structure-textarea:focus {
+    border: 1px solid var(--color-primary);
+    outline: none;
+}
+
+.error {
+    color: red;
+}
+
+.button {
+    border-radius: 10px;
+
+    border: 1px solid var(--color-accent);
+    background: var(--color-accent);
+    color: var(--color-primary);
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 0;
+
+}
+
+.button:hover {
+    border: 1px solid var(--color-accent);
+    background: var(--color-primary);
+    color: var(--color-light);
+}
+
+.inline-code {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    padding: 2px 2px;
+    font-size: 18px;
+}
+
+.vertical-divider {
+    width: 1px;
+    background-color: var(--color-accent);
+    max-height: 100%;
+
+    box-shadow: 0 0 50px 2px var(--color-accent);
+}
+
+.generated-data {
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    height: 500px;
+    overflow-y: auto;
+    text-align: left;
+    padding: 10px;
+
+    border: 1px solid var(--color-primary);
+    background: var(--color-accent);
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.25;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-accent);
+    overscroll-behavior: none;
+}
